@@ -8,20 +8,17 @@
 ![](figures/qr_code.png){font-size="2em"}
 :::
 
-## Assignment
-
-TBA
-
-## How to access the assignment
-
-{{< video figures/assignment-submission.mkv aspect-ratio="16x9" >}}
 
 ## Notebooks
 
--   [01-Introduction.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/01-Introduction.ipynb)
+-   [01-Introduction.ipynb (class)](https://colab.research.google.com/github/febse/ta/blob/main/class/01-Introduction.ipynb)
+-   [01-Introduction.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/01-Introduction.ipynb)
+-      
 <!-- -   [02-01-BOW-Models.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-01-BOW-Models.ipynb) -->
--   [02-02-Preprocessing.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-02-Preprocessing.ipynb)
--   [02-03-TF-IDF.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-03-TF-IDF.ipynb)
+-   [02-02-Preprocessing.ipynb (class)](https://colab.research.google.com/github/febse/ta/blob/main/class/02-02-Preprocessing.ipynb)
+-   [02-02-Preprocessing.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/02-02-Preprocessing.ipynb)
+-   [02-03-TF-IDF.ipynb (class)](https://colab.research.google.com/github/febse/ta/blob/main/class/02-03-TF-IDF.ipynb)
+-   [02-03-TF-IDF.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/02-03-TF-IDF.ipynb)
 <!-- -   [02-05-A-SVD.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-05-A-SVD.ipynb)
 -   [02-05-Latent-Semantic-Analysis.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-05-Latent-Semantic-Analysis.ipynb)
 -   [02-04-Extractive-Summarization.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-04-Extractive-Summarization.ipynb)
@@ -30,6 +27,7 @@ TBA
 -   [03-03-ANN-Classification.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-03-ANN-Classification.ipynb)
 -   [03-04-Word2Vec.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-04-Word2Vec.ipynb)
 -   [04-01-Using-Word-Embeddings.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/04-01-Using-Word-Embeddings.ipynb) -->
+
 ## GitHub Repository
 
 All course materials are available in the GitHub repository:
@@ -38,7 +36,7 @@ All course materials are available in the GitHub repository:
 
 ## Software Setup (Recommended)
 
-Please make sure that you have a working [Google](https://www.google.com/) account.
+Please make sure that you have a working [Google](https://www.google.com/) account. Upload the 
 
 ## Software Setup (Local)
 
@@ -60,7 +58,7 @@ uv sync
 
 This will download and install all required packages.
 
-In `VS Code` ([download here](https://code.visualstudio.com/)), make sure to select the correct Python interpreter: `Ctrl+Shift+P` → `Python: Select Interpreter` → `(ta2025) .venv/bin/python`. When running the notebooks `VS Code` may ask you to select a kernel. Select the same interpreter as above.
+In `VS Code` ([download here](https://code.visualstudio.com/)), make sure to select the correct Python interpreter: `Ctrl+Shift+P` → `Python: Select Interpreter` → `.venv/bin/python`. When running the notebooks `VS Code` may ask you to select a kernel. Select the same interpreter as above.
 
 The project directory contains a `.vscode/extensions.json` file with recommended extensions for `VS Code`. When the IDE prompts you to install them, please do so.
 
