@@ -1,52 +1,40 @@
 # General Information {.unnumbered}
 
-:::{.callout-note}
-
+::: callout-note
 ## Site URL
 
 [{{< var url >}}]({{< var url >}}){style="font-size:2em; margin-left: 1em;"}
 
-![](figures/qr_code.png){font-size=2em}
+![](figures/qr_code.png){font-size="2em"}
 :::
 
 ## Assignment
 
-The assignment is due by **February 05, 2026**. To access it, please visit the following 
-GitHub Classroom link:
-
-[https://classroom.github.com/a/tHAeY3HU](https://classroom.github.com/a/tHAeY3HU)
-
-You need to be logged in to your GitHub account to accept the assignment (if you don't have one, please create it first). This is meant to be a group assignment with up to 4 members per group. When you follow the link it will prompt you to select your name from a roster and to choose your team. The first person to accept the assignment will create the repository for the team. Other team members can then join the repository by following the same link and selecting the already created team.
-
-The assignment notebook is in the file called `assignment.ipynb` in your repository.
+TBA
 
 ## How to access the assignment
 
 {{< video figures/assignment-submission.mkv aspect-ratio="16x9" >}}
 
-
 ## Notebooks
 
-- [01-Introduction.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/01-Introduction.ipynb)
-- [02-01-BOW-Models.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/02-01-BOW-Models.ipynb)
-- [02-02-Preprocessing.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/02-02-Preprocessing.ipynb)
-- [02-03-TF-IDF.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/02-03-TF-IDF.ipynb)
-- [02-05-A-SVD.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/02-05-A-SVD.ipynb)
-- [02-05-Latent-Semantic-Analysis.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/02-05-Latent-Semantic-Analysis.ipynb)
-- [02-04-Extractive-Summarization.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/02-04-Extractive-Summarization.ipynb)
-- [03-01-Word-Embeddings-Overview.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/03-01-Word-Embeddings-Overview.ipynb)
-- [03-02-ANN-Regression.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/03-02-ANN-Regression.ipynb)
-- [03-03-ANN-Classification.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/03-03-ANN-Classification.ipynb)
-- [03-04-Word2Vec.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/03-04-Word2Vec.ipynb)
-- [04-01-Using-Word-Embeddings.ipynb](https://colab.research.google.com/github/febse/ta2025/blob/main/04-01-Using-Word-Embeddings.ipynb)
-
-
+-   [01-Introduction.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/01-Introduction.ipynb)
+<!-- -   [02-01-BOW-Models.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-01-BOW-Models.ipynb) -->
+-   [02-02-Preprocessing.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-02-Preprocessing.ipynb)
+-   [02-03-TF-IDF.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-03-TF-IDF.ipynb)
+<!-- -   [02-05-A-SVD.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-05-A-SVD.ipynb)
+-   [02-05-Latent-Semantic-Analysis.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-05-Latent-Semantic-Analysis.ipynb)
+-   [02-04-Extractive-Summarization.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-04-Extractive-Summarization.ipynb)
+-   [03-01-Word-Embeddings-Overview.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-01-Word-Embeddings-Overview.ipynb)
+-   [03-02-ANN-Regression.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-02-ANN-Regression.ipynb)
+-   [03-03-ANN-Classification.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-03-ANN-Classification.ipynb)
+-   [03-04-Word2Vec.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-04-Word2Vec.ipynb)
+-   [04-01-Using-Word-Embeddings.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/04-01-Using-Word-Embeddings.ipynb) -->
 ## GitHub Repository
 
 All course materials are available in the GitHub repository:
 
 [{{< var github >}}]({{< var github >}})
-
 
 ## Software Setup (Recommended)
 
@@ -54,12 +42,11 @@ Please make sure that you have a working [Google](https://www.google.com/) accou
 
 ## Software Setup (Local)
 
-First install `git` on your machine: [follow the instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for your operating system. For Windows users,
-download and install [Git for Windows](https://git-scm.com/download/win).
+First install `git` on your machine: [follow the instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for your operating system. For Windows users, download and install [Git for Windows](https://git-scm.com/download/win).
 
 After installing `git`, open `git bash` and clone the repository:
 
-```bash
+``` bash
 git clone {{< var githubHttps >}}
 ```
 
@@ -67,14 +54,13 @@ The project dependencies are managed via `uv` so you need to install it first: [
 
 After installing `uv`, navigate to the project folder in your terminal and run:
 
-```bash
+``` bash
 uv sync
 ```
 
 This will download and install all required packages.
 
-In `VS Code` ([download here](https://code.visualstudio.com/)), make sure to select the correct Python interpreter: `Ctrl+Shift+P` &rarr; `Python: Select Interpreter` &rarr; `(ta2025) .venv/bin/python`.
-When running the notebooks `VS Code` may ask you to select a kernel. Select the same interpreter as above.
+In `VS Code` ([download here](https://code.visualstudio.com/)), make sure to select the correct Python interpreter: `Ctrl+Shift+P` → `Python: Select Interpreter` → `(ta2025) .venv/bin/python`. When running the notebooks `VS Code` may ask you to select a kernel. Select the same interpreter as above.
 
 The project directory contains a `.vscode/extensions.json` file with recommended extensions for `VS Code`. When the IDE prompts you to install them, please do so.
 
