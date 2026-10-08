@@ -71,3 +71,18 @@ repo/
 
 /__pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pyz.d
+*.pyw.d
+
+/.idea/
+/.conda/
+/.venv/
+/venv/
+
+/exam/
+site_libs
+claude_sandbox.sh

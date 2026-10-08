@@ -27,3 +27,11 @@ format:
   html:
     theme: cosmo
     html-math-method: katex
+
+editor: visual
+
+profile:
+  default: development
+
+execute:
+  enabled: true

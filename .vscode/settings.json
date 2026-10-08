@@ -9,10 +9,12 @@
         "LSTMs",
         "Multiclass",
         "Pretrained",
+        "quarto",
         "scatterplot",
         "softmax",
         "steelblue",
         "stopword",
         "Stopwords"
-    ]
+    ],
+    "git.autofetch": true
 }
