@@ -14,7 +14,7 @@
 -   [01-Introduction.ipynb (class)](https://colab.research.google.com/github/febse/ta/blob/main/class/01-Introduction.ipynb)
 -   [02-01-Preprocessing.ipynb (class)](https://colab.research.google.com/github/febse/ta/blob/main/class/02-01-Preprocessing.ipynb)
 -   [02-02-TF-IDF.ipynb (class)](https://colab.research.google.com/github/febse/ta/blob/main/class/02-02-TF-IDF.ipynb)
--   [02-03-TF-IDF-Classification-Exercise.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/02-03-TF-IDF.ipynb)
+-   [02-03-TF-IDF-Classification-Exercise.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-03-TF-IDF-Classification-Exercise.ipynb)
 
 
 ## GitHub Repository
