@@ -8,21 +8,21 @@ book:
   date: last-modified
   chapters:
     - index.qmd
-    # - 01-Introduction.ipynb
-    # - 02-01-BOW-Models.ipynb
-    # - 02-02-Preprocessing.ipynb
-    # - 02-03-TF-IDF.ipynb
-    # - 02-05-A-SVD.ipynb
-    # - 02-05-Latent-Semantic-Analysis.ipynb
-    # - 03-01-Word-Embeddings-Overview.ipynb
-    # - 03-02-ANN-Bigram-Motivation.ipynb
-    # - 03-03-ANN-Simple-Linear-Regression.ipynb
-    # - 03-04-ANN-Multiple-Regression.ipynb
-    # - 03-05-ANN-Logistic-Regression.ipynb
-    # - 03-06-ANN-Multiclass-Classification.ipynb
-    # - 03-07-ANN-Multiclass-Derivatives-Optional.ipynb
-    # - 03-08-Word2Vec.ipynb
-    # - 04-01-Using-Word-Embeddings.ipynb
+    - 01-Introduction.ipynb
+    - 02-01-BOW-Models.ipynb
+    - 02-02-Preprocessing.ipynb
+    - 02-03-TF-IDF.ipynb
+    - 02-05-A-SVD.ipynb
+    - 02-05-Latent-Semantic-Analysis.ipynb
+    - 03-01-Word-Embeddings-Overview.ipynb
+    - 03-02-ANN-Bigram-Motivation.ipynb
+    - 03-03-ANN-Simple-Linear-Regression.ipynb
+    - 03-04-ANN-Multiple-Regression.ipynb
+    - 03-05-ANN-Logistic-Regression.ipynb
+    - 03-06-ANN-Multiclass-Classification.ipynb
+    - 03-07-ANN-Multiclass-Derivatives-Optional.ipynb
+    - 03-08-Word2Vec.ipynb
+    - 04-01-Using-Word-Embeddings.ipynb
     - references.qmd
 
 bibliography: references.bib
