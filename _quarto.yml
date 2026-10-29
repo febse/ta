@@ -22,6 +22,10 @@ book:
     - 03-06-ANN-Multiclass-Classification.ipynb
     - 03-07-ANN-Multiclass-Derivatives-Optional.ipynb
     - 03-08-Word2Vec.ipynb
+    - 03-09-ANN-Image-Classification.ipynb
+    - 03-10-CNN-Image-Classification.ipynb
+    - 03-11-RNN-Next-Word-Prediction.ipynb
+    - 03-12-RNN-Sentiment-Classification.ipynb
     - 04-01-Using-Word-Embeddings.ipynb
     - references.qmd
 
