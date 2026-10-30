@@ -1,0 +1,97 @@
+# Videos {.unnumbered}
+
+All animations used in the notebooks on one page. Each video is also embedded in the chapter named below its title.
+
+## Linear Algebra
+
+### Vector movement
+
+Used in the SVD chapter material. Chapter: [SVD: a Tiny Example](02-04-SVD.ipynb).
+
+{{< video videos/VectorMovement.mp4 >}}
+
+### Cosine similarity
+
+Chapter: [SVD: a Tiny Example](02-04-SVD.ipynb).
+
+{{< video videos/CosineSimilarity.mp4 >}}
+
+## Simple Linear Regression as a Neural Network
+
+### A single neuron computes a prediction
+
+Chapter: [Simple Linear Regression](03-03-ANN-Simple-Linear-Regression.ipynb).
+
+{{< video videos/SingleNeuronComputation.mp4 >}}
+
+### Gradient descent on a quadratic loss
+
+Chapter: [Simple Linear Regression](03-03-ANN-Simple-Linear-Regression.ipynb).
+
+{{< video videos/GradientDescentQuadratic.mp4 >}}
+
+### Gradient descent on a polynomial loss
+
+Chapter: [Simple Linear Regression](03-03-ANN-Simple-Linear-Regression.ipynb).
+
+{{< video videos/GradientDescentPolynomial.mp4 >}}
+
+### Gradient descent for linear regression with two parameters
+
+Chapter: [Simple Linear Regression](03-03-ANN-Simple-Linear-Regression.ipynb).
+
+{{< video videos/GradientDescentLinearRegressionTwoParams.mp4 >}}
+
+## Hidden Layers
+
+### Function approximation with a hidden layer (single input)
+
+Chapter: [Simple Regression with a Hidden Layer](03-04-ANN-Simple-Regression-Hidden-Layer.ipynb).
+
+{{< video videos/SingleInputHiddenLayer.mp4 >}}
+
+### ReLU hidden units
+
+Chapter: [Simple Regression with a Hidden Layer](03-04-ANN-Simple-Regression-Hidden-Layer.ipynb).
+
+{{< video videos/ReluHiddenLayer.mp4 >}}
+
+### Three inputs, two hidden neurons, one output
+
+Chapter: [Multiple Regression with a Hidden Layer](03-05-ANN-Multiple-Regression.ipynb).
+
+{{< video videos/ThreeInputsTwoHiddenLayerOneOutput.mp4 >}}
+
+### Three inputs, two hidden neurons, one output (vectorized)
+
+Chapter: [Multiple Regression with a Hidden Layer](03-05-ANN-Multiple-Regression.ipynb).
+
+{{< video videos/ThreeInputsTwoHiddenLayerOneOutputVector.mp4 >}}
+
+## Classification
+
+### Multiclass classification: forward pass
+
+Chapter: [Multi-Class Classification with Hidden Layers](03-07-ANN-Multiclass-Classification.ipynb).
+
+{{< video videos/MulticlassForward.mp4 >}}
+
+### Binary classification with two inputs
+
+Not embedded in a chapter yet. Related chapter: [Logistic Regression with a Hidden Layer](03-06-ANN-Logistic-Regression.ipynb).
+
+{{< video videos/TwoInputBinaryClassification.mp4 >}}
+
+## Word2Vec
+
+### Training the bigram model
+
+Chapter: [Word2Vec](03-09-Word2Vec.ipynb).
+
+{{< video videos/BiGramTraining.mp4 >}}
+
+### Training the skip-gram model
+
+Chapter: [Word2Vec](03-09-Word2Vec.ipynb).
+
+{{< video videos/SkipGramTraining.mp4 >}}

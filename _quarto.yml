@@ -28,6 +28,7 @@ book:
     - 03-12-RNN-Next-Word-Prediction.ipynb
     - 03-13-RNN-Sentiment-Classification.ipynb
     - 04-01-Using-Word-Embeddings.ipynb
+    - videos.qmd
     - references.qmd
 
 bibliography: references.bib
