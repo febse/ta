@@ -9,12 +9,35 @@
 :::
 
 
-## Notebooks
+## Notebooks (Colab)
 
--   [01-Introduction.ipynb (class)](https://colab.research.google.com/github/febse/ta/blob/main/class/01-Introduction.ipynb)
--   [02-01-Preprocessing.ipynb (class)](https://colab.research.google.com/github/febse/ta/blob/main/class/02-01-Preprocessing.ipynb)
--   [02-02-TF-IDF.ipynb (class)](https://colab.research.google.com/github/febse/ta/blob/main/class/02-02-TF-IDF.ipynb)
+### Section 01
+
+-   [01-Introduction.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/01-Introduction.ipynb)
+
+### Section 02
+
+-   [02-01-BOW-Models.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-01-BOW-Models.ipynb)
+-   [02-02-Preprocessing.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-02-Preprocessing.ipynb)
 -   [02-03-TF-IDF-Classification-Exercise.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-03-TF-IDF-Classification-Exercise.ipynb)
+-   [02-03-TF-IDF.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-03-TF-IDF.ipynb)
+-   [02-04-SVD.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-04-SVD.ipynb)
+-   [02-05-SVD-Latent-Semantic-Analysis-Example.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-05-SVD-Latent-Semantic-Analysis-Example.ipynb)
+-   [02-06-Extractive-Summarization.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/02-06-Extractive-Summarization.ipynb)
+
+### Section 03
+
+-   [03-02-ANN-Bigram-Motivation.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-02-ANN-Bigram-Motivation.ipynb)
+-   [03-03-ANN-Simple-Linear-Regression.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-03-ANN-Simple-Linear-Regression.ipynb)
+-   [03-04-ANN-Simple-Regression-Hidden-Layer.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-04-ANN-Simple-Regression-Hidden-Layer.ipynb)
+-   [03-05-ANN-Multiple-Regression.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-05-ANN-Multiple-Regression.ipynb)
+-   [03-06-ANN-Logistic-Regression.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-06-ANN-Logistic-Regression.ipynb)
+-   [03-07-ANN-Multiclass-Classification.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-07-ANN-Multiclass-Classification.ipynb)
+-   [03-09-Word2Vec.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-09-Word2Vec.ipynb)
+-   [03-10-ANN-Image-Classification.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-10-ANN-Image-Classification.ipynb)
+-   [03-11-CNN-Image-Classification.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-11-CNN-Image-Classification.ipynb)
+-   [03-12-RNN-Next-Word-Prediction.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-12-RNN-Next-Word-Prediction.ipynb)
+-   [03-13-RNN-Sentiment-Classification.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-13-RNN-Sentiment-Classification.ipynb)
 
 
 ## GitHub Repository
