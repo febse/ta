@@ -4,6 +4,8 @@ All animations used in the notebooks on one page. Each video is also embedded in
 
 ## Linear Algebra
 
+{{< video videos/HeartSVDNoiseDominates.mp4 >}}
+
 ### SVD: noise dominates
 
 Chapter: [SVD: a Tiny Example](02-04-SVD.ipynb).
