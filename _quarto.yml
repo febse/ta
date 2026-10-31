@@ -27,7 +27,10 @@ book:
     - 03-11-CNN-Image-Classification.ipynb
     - 03-12-RNN-Next-Word-Prediction.ipynb
     - 03-13-RNN-Sentiment-Classification.ipynb
+    - 03-14-RNN-Sentiment-One-Hot-Input.ipynb
     - 04-01-Using-Word-Embeddings.ipynb
+    - 04-02-GloVe.ipynb
+    - 06-01-Attention.ipynb
     - videos.qmd
     - references.qmd
 

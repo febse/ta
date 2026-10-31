@@ -38,6 +38,15 @@
 -   [03-11-CNN-Image-Classification.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-11-CNN-Image-Classification.ipynb)
 -   [03-12-RNN-Next-Word-Prediction.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-12-RNN-Next-Word-Prediction.ipynb)
 -   [03-13-RNN-Sentiment-Classification.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-13-RNN-Sentiment-Classification.ipynb)
+-   [03-14-RNN-Sentiment-One-Hot-Input.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/03-14-RNN-Sentiment-One-Hot-Input.ipynb)
+
+### Section 04
+
+-   [04-02-GloVe.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/04-02-GloVe.ipynb)
+
+### Section 06
+
+-   [06-01-Attention.ipynb](https://colab.research.google.com/github/febse/ta/blob/main/class/06-01-Attention.ipynb)
 
 
 ## GitHub Repository
