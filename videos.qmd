@@ -103,3 +103,7 @@ Chapter: [Word2Vec](03-09-Word2Vec.ipynb).
 Chapter: [Word2Vec](03-09-Word2Vec.ipynb).
 
 {{< video videos/SkipGramTraining.mp4 >}}
+
+## RNN
+
+{{< video videos/RNNSentiment.mp4 >}}

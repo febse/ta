@@ -29,7 +29,7 @@ book:
     - 03-13-RNN-Sentiment-Classification.ipynb
     - 03-14-RNN-Sentiment-One-Hot-Input.ipynb
     - 04-01-Using-Word-Embeddings.ipynb
-    - 04-02-GloVe.ipynb
+    # - 04-02-GloVe.ipynb
     - 06-01-Attention.ipynb
     - videos.qmd
     - references.qmd
