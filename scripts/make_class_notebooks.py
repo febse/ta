@@ -2,11 +2,23 @@
 the notebooks listed in _quarto.yml.
 
 All code cells except those whose first line starts with ``#no-ex-class``,
-the headings (titles) and the ``:::{.ex-class}`` fenced divs of markdown cells
-are kept. The results are written to ./class under the original file names.
+the headings (titles) and the content of the ``:::{.ex-class}`` fenced divs of
+markdown cells are kept (the div fences themselves are removed). The results are
+written to ./class under the original file names.
 Relative figure paths are replaced by raw URLs on the main branch of the
 repository in _variables.yml.
+
+Usage::
+
+    python scripts/make_class_notebooks.py [--clear-outputs] [PATTERN ...]
+
+Without patterns all notebooks are converted. With patterns (shell-style, matched
+against the file name, e.g. ``"02-*" "03-*"``) only the matching notebooks are
+written. ``--clear-outputs`` removes outputs and execution counts of the kept
+code cells.
 """
+import argparse
+import fnmatch
 import json
 import re
 from pathlib import Path
@@ -57,8 +69,8 @@ FENCE = re.compile(r"^\s*(```|~~~)")
 
 
 def extract_kept_parts(text):
-    """Return headings and ex-class fenced divs (with fences) in document order."""
-    parts, current, depth, in_code, other = [], None, 0, False, 0
+    """Return headings and the content of ex-class fenced divs (without the fences) in document order."""
+    parts, current, stack, in_code, other = [], None, [], False, 0
     for line in text.splitlines(keepends=True):
         stripped = line.rstrip("\n")
         if current is None:
@@ -67,7 +79,7 @@ def extract_kept_parts(text):
             elif in_code:
                 continue
             elif EX_CLASS_DIV.match(stripped):
-                current, depth = [line], 1
+                current, stack = [], ["ex"]
             elif CLOSE_DIV.match(stripped):
                 other = max(other - 1, 0)
             elif OPEN_DIV.match(stripped):
@@ -75,14 +87,22 @@ def extract_kept_parts(text):
             elif HEADING.match(stripped) and other == 0:
                 parts.append(stripped + "\n")
             continue
-        current.append(line)
+        # inside an ex-class div: drop the fences of ex-class divs (also nested ones)
+        # and keep the fences of any other div (callouts etc.) together with their content
         if CLOSE_DIV.match(stripped):
-            depth -= 1
-            if depth == 0:
-                parts.append("".join(current).rstrip("\n") + "\n")
+            kind = stack.pop()
+            if kind == "other":
+                current.append(line)
+            if not stack:
+                parts.append("".join(current).strip("\n") + "\n")
                 current = None
+        elif EX_CLASS_DIV.match(stripped):
+            stack.append("ex")
         elif OPEN_DIV.match(stripped):
-            depth += 1
+            stack.append("other")
+            current.append(line)
+        else:
+            current.append(line)
     return parts
 
 
@@ -91,11 +111,13 @@ def is_excluded_from_class(cell):
     return re.match(r"#\s*no-ex-class\b", first) is not None
 
 
-def strip_notebook(nb, base_url, notebook_dir):
+def strip_notebook(nb, base_url, notebook_dir, clear_outputs=False):
     cells = []
     for cell in nb["cells"]:
         if cell["cell_type"] == "code":
             if not is_excluded_from_class(cell):
+                if clear_outputs:
+                    cell = {**cell, "outputs": [], "execution_count": None}
                 cells.append(cell)
         elif cell["cell_type"] == "markdown":
             blocks = extract_kept_parts(source_text(cell))
@@ -130,11 +152,18 @@ def all_notebooks():
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    parser.add_argument("patterns", nargs="*", help="file name patterns, e.g. '02-*'")
+    parser.add_argument("--clear-outputs", action="store_true")
+    args = parser.parse_args()
+
     OUT_DIR.mkdir(exist_ok=True)
     base_url = raw_base_url()
     for path in all_notebooks():
+        if args.patterns and not any(fnmatch.fnmatch(path.name, pattern) for pattern in args.patterns):
+            continue
         nb = json.loads(path.read_text(encoding="utf-8"))
-        stripped = strip_notebook(nb, base_url, path.parent)
+        stripped = strip_notebook(nb, base_url, path.parent, args.clear_outputs)
         out = OUT_DIR / path.name
         out.write_text(json.dumps(stripped, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"{path.name}: kept {len(stripped['cells'])} of {len(nb['cells'])} cells -> {out.relative_to(ROOT)}")
